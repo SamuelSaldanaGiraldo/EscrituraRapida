@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.miniproyecto1","l":"com.example.miniproyecto1"},{"m":"com.example.miniproyecto1","l":"com.example.miniproyecto1.controller"},{"m":"com.example.miniproyecto1","l":"com.example.miniproyecto1.model.juego"}];updateSearchResults();

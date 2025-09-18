@@ -1,0 +1,38 @@
+
+.button{
+    -fx-background-color:  #E6AF2E; /* verde normal */
+    -fx-text-fill: white;
+    -fx-border-width: 6;
+    -fx-border-color:  #ffed24;
+    -fx-border-radius:  5;
+    -fx-background-radius: 10;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.24), 3, 20,0,0);
+}
+
+.button:hover {
+    -fx-background-color: #ffcc00;
+    -fx-effect: dropshadow(gaussian, rgba(230, 230, 202, 0.75),20,0.6,0,0);/* verde más claro */
+}
+
+.backgroundMenu{
+    -fx-background-image: url('../images/background.png');
+    -fx-background-size: 100% 100%;
+}
+
+.text-field{
+    -fx-background-color:  #E6AF2E;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-text-fill: #00f7ff;
+    -fx-text-origin: 20;
+}
+
+.messagelabel{
+    -fx-text-fill: #00cbdb;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 14 px;
+    -fx-font-style: bold;
+}
+
+
