@@ -117,8 +117,7 @@ public class Word {
      *     <li>If incorrect:
      *         <ul>
      *             <li>If time is up: registers failure and shows the final screen.</li>
-     *             <li>If time remains: shows "INCORRECT", restarts timer,
-     *             generates a new word, and registers failure.</li>
+     *             <li>If time remains: shows "INCORRECT" and registers failure.</li>
      *         </ul>
      *     </li>
      * </ul>
@@ -163,9 +162,7 @@ public class Word {
                 game.getLbMessage().setText("INCORRECTO");
                 PauseTransition pause2 = new PauseTransition(Duration.seconds(0.5));
                 pause2.setOnFinished(event -> {
-                    game.getTimer().restart(20, game);
                     game.getLbMessage().setText("ESPERANDO AL JUGADOR...");
-                    assignWord(game.getLbWord());
                     game.getTfWord().clear();
                     game.getLevel().registerFailure();
                 });

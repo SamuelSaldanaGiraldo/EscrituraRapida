@@ -52,7 +52,7 @@ public class GameController {
         // Create and configure the Game instance with the UI components.
         fastWriting = new Game(lbTimer, lbWord, lbLevel, tfWord, progressBar, lbMessage);
         fastWriting.setController(this);
-        fastWriting.Start();
+        fastWriting.start();
         // Add event handler: when Enter is pressed, validate the typed word.
         tfWord.setOnKeyPressed(e -> {
             switch (e.getCode()) {

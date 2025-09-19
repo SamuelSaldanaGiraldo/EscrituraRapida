@@ -18,6 +18,8 @@ import java.io.IOException;
 public class MenuController {
     @FXML
     private Button btnPlay;
+    @FXML
+    private Button btnEnd;
 
     /**
      * Handles the event when the "Play" button is clicked.
@@ -34,5 +36,10 @@ public class MenuController {
         Stage stage = (Stage) btnPlay.getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+    }
+    @FXML
+    private void onEndClicked(){
+        Stage stage = (Stage) btnEnd.getScene().getWindow();
+        stage.close();
     }
 }

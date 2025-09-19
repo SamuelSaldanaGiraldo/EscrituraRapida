@@ -11,7 +11,6 @@ public class Level {
     private int level = 1;
     private int failedLevels = 0;
 
-
     /**
      * Sets the label to display the starting level.
      * @param levelLabel the label where the level will be displayed.
