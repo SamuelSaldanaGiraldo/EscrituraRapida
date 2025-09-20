@@ -21,7 +21,7 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="btnBack" layoutX="23.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBackClicked" style="-fx-background-radius: 10;" text="BACK" textFill="#041d44">
+                  <Button fx:id="btnBack" layoutX="15.0" layoutY="11.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="29.0" prefWidth="27.0" style="-fx-background-radius: 10; -fx-background-image: back;" textFill="#041d44">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -31,7 +31,14 @@
                               <Color opacity="0.8030592799186707" />
                            </color>
                         </DropShadow>
-                     </effect></Button>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0">

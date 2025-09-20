@@ -37,7 +37,7 @@
       </Pane>
       <Pane prefHeight="325.0" prefWidth="600.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
          <children>
-            <StackPane layoutX="205.0" layoutY="1.0" prefHeight="95.0" prefWidth="190.0">
+            <StackPane layoutX="201.0" layoutY="1.0" prefHeight="95.0" prefWidth="197.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="95.0" stroke="BLACK" strokeType="INSIDE" width="189.0">
                      <effect>
@@ -49,10 +49,17 @@
                         <BoxBlur height="50.28" iterations="2" width="62.33" />
                      </effect>
                   </Rectangle>
-                  <Button id="btnJugar" fx:id="btnPlay" mnemonicParsing="false" onAction="#onPlayClicked" prefHeight="57.0" prefWidth="134.0" text="JUGAR" textFill="#041d44">
+                  <Button id="btnJugar" fx:id="btnPlay" mnemonicParsing="false" onAction="#onPlayClicked" prefHeight="59.0" prefWidth="139.0" textFill="#041d44">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/play.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Button>
                </children>
             </StackPane>
@@ -109,10 +116,29 @@
                   <Font name="Phosphate Inline" size="13.0" />
                </font>
             </Label>
-            <Button id="btnJugar" fx:id="btnEnd" layoutX="233.0" layoutY="81.0" mnemonicParsing="false" onAction="#onEndClicked" prefHeight="57.0" prefWidth="134.0" text="SALIR" textFill="#041d44">
+            <Button id="btnJugar" fx:id="btnEnd" layoutX="230.0" layoutY="82.0" mnemonicParsing="false" onAction="#onEndClicked" prefHeight="45.0" prefWidth="38.0" textFill="#041d44">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnJugar" fx:id="btnHelp" layoutX="302.0" layoutY="81.0" mnemonicParsing="false" onAction="#onHelpClicked" prefHeight="59.0" prefWidth="68.0" textFill="#041d44">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
          </children>
       </Pane>
